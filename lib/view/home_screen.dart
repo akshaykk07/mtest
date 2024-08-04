@@ -28,6 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
           colors: customBlue,
           fontWeight: FontWeight.w600,
         ),
+        backgroundColor: Colors.white,
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: size.width * 0.05),
@@ -40,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Expanded(
                       flex: 3,
                       child: CustomTextfield(
-                        hint: 'Name Product',
+                        hint: 'Product Name',
                         keyboardType: TextInputType.name,
                         size: size,
                         controller: items[index].nameController,
