@@ -28,14 +28,17 @@ class _HomeScreenState extends State<HomeScreen> {
           colors: customBlue,
           fontWeight: FontWeight.w600,
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: white,
+        shadowColor: whiteone,
+        elevation: 1,
+        surfaceTintColor: Colors.transparent,
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: size.width * 0.05),
         child: ListView.builder(
           itemBuilder: (context, index) {
             return Padding(
-              padding: const EdgeInsets.only(top: 15),
+              padding: const EdgeInsets.only(top: 25),
               child: Row(
                 children: [
                   Expanded(
