@@ -1,5 +1,5 @@
+// Custom Text Widget class....
 import 'package:flutter/material.dart';
-
 import 'colors.dart';
 
 class AppText extends StatelessWidget {

@@ -135,7 +135,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  void addNewField() {
+  void addNewField() {  // addNewField() is used to add fields one by one...
     final nameController = TextEditingController();
     final priceController = TextEditingController();
 
@@ -144,7 +144,7 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
-  void removeField(int index) {
+  void removeField(int index) { // removeField function is used to remove the fields ...
     if (items.isNotEmpty) {
       setState(() {
         items.removeAt(index);
@@ -153,8 +153,8 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
-  void updateTotal() {
-    double totals = 0;
+  void updateTotal() {  // this function is used to calculate the subtotal ...
+    double totals = 0; 
     for (var item in items) {
       final value = double.tryParse(item.priceController.text);
       if (value != null) {
